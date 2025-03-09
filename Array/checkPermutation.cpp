@@ -28,7 +28,7 @@ static inline void trim(string &a_trim)
     rtrim(a_trim);
 }
 
-// [6 Mar 2025]
+// [6 Mar 2025] [2nd Array]
 // Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
 
 bool checkPermutationOneApproach(string a2_0_1_1, string a2_0_1_2)

@@ -4,13 +4,13 @@
 #include <vector>
 using namespace std;
 
-// [8 Mar 2025]
+// [8 Mar 2025] [4th Array]
 // Palindrome Permutation: Given a string, write a function to check if it is a permutation of a palindrome.
 // A palindrome is a word or phrase that is the same forwards and backwards. A permutation
 // is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
 // EXAMPLE
 // Input: Tact Coa
-// Output: True (permutations: "taco cat", "atco eta", etc.)
+// Output: True (permutations: "taco cat", "atco cta", etc.)
 
 bool permutationPalindromeOneApproach(string &a4_1_1){
     for(int i=0;i<a4_1_1.length();i++) a4_1_1[i]=char(tolower(a4_1_1[i]));
@@ -28,8 +28,10 @@ bool permutationPalindromeOneApproach(string &a4_1_1){
 
 int main()
 {
-    string input = "Tact Coa";
+    string input = "carerac";
     if(permutationPalindromeOneApproach(input))
         cout<<R"(")"<<input<<R"(" is a permutation Palindrome)"<<endl;
+    else cout<<R"(")"<<input<<R"(" is a NOT permutation Palindrome)"<<endl;
+
     return 0;
 }
